@@ -4,8 +4,8 @@ import Head from "next/head";
 import { MenuHeader } from "@/Components/menu-header";
 import { Footer } from "@/Components/footer";
 import { Content } from "@/Components/content";
-import { Projects } from "@/Components/firebase/projects";
-import { AWSSES } from "@/Components/aws/awsSES";
+// import { Projects } from "@/Components/firebase/projects";
+// import { AWSSES } from "@/Components/aws/awsSES";
 
 const inter = Inter({ subsets: ["latin"] });
 
