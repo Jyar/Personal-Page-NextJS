@@ -2,26 +2,130 @@
 @tailwind components;
 @tailwind utilities;
 
-:root {
-  --foreground-rgb: 0, 0, 0;
-  --background-start-rgb: 214, 219, 220;
-  --background-end-rgb: 255, 255, 255;
+/* @media (prefers-color-scheme: light) {
+  :root {
+    color-scheme: light;
+    background-color: white;
+  }
+
+  .darkCard {
+    background-color: white;
+    border-color: white;
+  }
+  .darkCard:hover {
+    background-color: white;
+  }
 }
 
 @media (prefers-color-scheme: dark) {
   :root {
+    overflow-x: hidden;
+
+    --background-black: black;
     --foreground-rgb: 255, 255, 255;
     --background-start-rgb: 0, 0, 0;
     --background-end-rgb: 0, 0, 0;
+
+    --primary-glow: radial-gradient(rgba(1, 65, 255, 0.4), rgba(1, 65, 255, 0));
+    --secondary-glow: linear-gradient(
+      to bottom right,
+      rgba(1, 65, 255, 0),
+      rgba(1, 65, 255, 0),
+      rgba(1, 65, 255, 0.3)
+    );
+
+    --tile-start-rgb: 2, 13, 46;
+    --tile-end-rgb: 2, 5, 19;
+    --tile-border: conic-gradient(
+      #ffffff80,
+      #ffffff40,
+      #ffffff30,
+      #ffffff20,
+      #ffffff10,
+      #ffffff10,
+      #ffffff80
+    );
+
+    --callout-rgb: 20, 20, 20;
+    --callout-border-rgb: 108, 108, 108;
+    --card-rgb: 100, 100, 100;
+    --card-border-rgb: 200, 200, 200;
   }
+  .darkCard {
+    background-color: darkgray;
+    border-color: darkgray;
+  }
+  .darkCard:hover {
+    background-color: gray;
+  }
+} */
+
+/* ----------- */
+
+html,
+body {
+  overflow-x: hidden;
+  color-scheme: light !important;
+}
+
+h1 {
+  font-size: 4rem;
+}
+h2 {
+  font-size: 2.5rem;
+}
+
+#svg {
+  max-width: 600px;
+  overflow: visible;
+  position: absolute;
+  right: 0px;
+}
+
+.ball {
+  fill: blue;
+  visibility: hidden;
 }
 
 body {
-  color: rgb(var(--foreground-rgb));
-  background: linear-gradient(
-      to bottom,
-      transparent,
-      rgb(var(--background-end-rgb))
-    )
-    rgb(var(--background-start-rgb));
+  font-size: 1.5rem;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+input {
+  font-size: 1.2rem;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+label {
+  font-size: 1.2rem;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+textarea {
+  font-size: 1.2rem;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+li {
+  font-size: 1.5rem;
+}
+
+.text-body {
+  font-size: 1.5rem;
+}
+
+.certification-body {
+  margin-bottom: 420px;
+}
+
+.gallery-border {
+  border: none;
+  height: 220px !important;
+  width: 220px !important;
+}
+
+.gallery-item {
+  height: 220px !important;
+  width: 220px !important;
 }
