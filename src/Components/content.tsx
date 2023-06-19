@@ -1,9 +1,9 @@
 import { useLayoutEffect, useEffect, useRef, useState } from "react";
 import { ContactForm } from "./sections/contact-form";
-import { gsap } from "gsap";
-import { ScrollTrigger } from "gsap/dist/ScrollTrigger";
-import { DrawSVGPlugin } from "gsap-trial/dist/DrawSVGPlugin";
-import MotionPathPlugin from "gsap-trial/dist/MotionPathPlugin";
+// import { gsap } from "gsap";
+// import { ScrollTrigger } from "gsap/dist/ScrollTrigger";
+// import { DrawSVGPlugin } from "gsap-trial/dist/DrawSVGPlugin";
+// import MotionPathPlugin from "gsap-trial/dist/MotionPathPlugin";
 import AOS from "aos";
 import "aos/dist/aos.css";
 import Lottie from "lottie-react";
@@ -27,51 +27,52 @@ export const Content = () => {
       offset: 50,
     });
 
-    let ctx = gsap.context(() => {
-      gsap.registerPlugin(ScrollTrigger, DrawSVGPlugin, MotionPathPlugin);
-      gsap.defaults({ ease: "none" });
+    // let ctx = gsap.context(() => {
+    //   gsap.registerPlugin(ScrollTrigger, DrawSVGPlugin, MotionPathPlugin);
+    //   gsap.defaults({ ease: "none" });
 
-      const pulses = gsap
-        .timeline({
-          defaults: {
-            duration: 0.05,
-            autoAlpha: 1,
-            scale: 2,
-            transformOrigin: "center",
-            ease: "elastic(2.5, 1)",
-          },
-        })
-        .to(".ball02, .text01", {}, 0.2)
-        .to(".ball03, .text02", {}, 0.33)
-        .to(".ball04, .text03", {}, 0.46);
+    //   const pulses = gsap
+    //     .timeline({
+    //       defaults: {
+    //         duration: 0.05,
+    //         autoAlpha: 1,
+    //         scale: 2,
+    //         transformOrigin: "center",
+    //         ease: "elastic(2.5, 1)",
+    //       },
+    //     })
+    //     .to(".ball02, .text01", {}, 0.2)
+    //     .to(".ball03, .text02", {}, 0.33)
+    //     .to(".ball04, .text03", {}, 0.46);
 
-      const main = gsap
-        .timeline({
-          defaults: { duration: 1 },
-          scrollTrigger: {
-            trigger: "#svg",
-            scrub: true,
-            start: "top center",
-            end: "bottom center",
-          },
-        })
-        .to(".ball01", { duration: 0.01, autoAlpha: 1 })
-        .from(".theLine", { drawSVG: 0 }, 0)
-        .to(
-          ".ball01",
-          {
-            motionPath: {
-              path: ".theLine",
-              align: ".theLine",
-              alignOrigin: [0.5, 0.5],
-            },
-          },
-          0
-        )
-        .add(pulses, 0);
-    });
+    //   const main = gsap
+    //     .timeline({
+    //       defaults: { duration: 1 },
+    //       scrollTrigger: {
+    //         trigger: "#svg",
+    //         scrub: true,
+    //         start: "top center",
+    //         end: "bottom center",
+    //       },
+    //     })
+    //     .to(".ball01", { duration: 0.01, autoAlpha: 1 })
+    //     .from(".theLine", { drawSVG: 0 }, 0)
+    //     .to(
+    //       ".ball01",
+    //       {
+    //         motionPath: {
+    //           path: ".theLine",
+    //           align: ".theLine",
+    //           alignOrigin: [0.5, 0.5],
+    //         },
+    //       },
+    //       0
+    //     )
+    //     .add(pulses, 0);
+    // }
+    // );
 
-    return () => ctx.revert(); // <-- CLEANUP!
+    // return () => ctx.revert(); // <-- CLEANUP!
   }, []);
 
   return (
@@ -99,7 +100,7 @@ export const Content = () => {
         </div>
       </div>
       {/* -------------- */}
-      <svg id="svg" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 600 3200">
+      {/* <svg id="svg" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 600 3200">
         <path
           className="theLine"
           d="M -5,0
@@ -123,7 +124,8 @@ export const Content = () => {
         {/* <circle className="ball ball02" r="20" cx="278" cy="201"></circle>
         <circle className="ball ball03" r="20" cx="327" cy="401"></circle>
         <circle className="ball ball04" r="20" cx="203" cy="601"></circle> */}
-      </svg>
+      {/* </svg> */}
+
       {/* -------------- */}
       <div className="max-w-screen-xl m-auto">
         {/* -------------- */}
@@ -386,23 +388,6 @@ export const Content = () => {
             </div>
           </div>
         </div>
-        {/* <nav className="navigationSection">
-        <div>
-          <div href="#one">Section one</div>
-        </div>
-        <div>
-          <div href="#two">Section two</div>
-        </div>
-        <div>
-          <div href="#three">Section three</div>
-        </div>
-        <div>
-          <div href="#four">Section four</div>
-        </div>
-        <div>
-          <div href="#five">Section five</div>
-        </div>
-      </nav> */}
         <div className=" w-full mt-4 p-8">
           <div>CONTACT ME </div>
           <ContactForm />
