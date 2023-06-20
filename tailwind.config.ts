@@ -11,6 +11,9 @@ export default {
   theme: {
     extend: {
       colors: {
+        sky: {
+          200: "#bae6fd",
+        },
         // light mode
         tremor: {
           brand: {
