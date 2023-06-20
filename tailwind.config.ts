@@ -15,7 +15,7 @@ export default {
           200: "#bae6fd",
         },
         blue: {
-          500: "3b82f6",
+          500: "#3b82f6",
         },
         // light mode
         tremor: {
