@@ -1,7 +1,6 @@
-/** @type {import('tailwindcss').Config} */
-const colors = require("tailwindcss/colors");
+import type { Config } from "tailwindcss";
 
-module.exports = {
+export default {
   content: [
     "./src/pages/**/*.{js,ts,jsx,tsx,mdx}",
     "./src/styles/**/*.{js,ts,jsx,tsx,mdx}",
@@ -94,4 +93,4 @@ module.exports = {
     ],
   },
   plugins: [require("flowbite/plugin")],
-};
+} satisfies Config;
