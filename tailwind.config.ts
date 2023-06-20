@@ -1,10 +1,12 @@
 import type { Config } from "tailwindcss";
 
 export default {
+  mode: "jit",
+  purge: ["./pages/**/*.{js,ts,jsx,tsx}", "./components/**/*.{js,ts,jsx,tsx}"],
   content: [
     "./src/pages/**/*.{js,ts,jsx,tsx,mdx}",
     "./src/styles/**/*.{js,ts,jsx,tsx,mdx}",
-    "./src/components/**/*.{js,ts,jsx,tsx,mdx}",
+    "./src/Components/**/*.{js,ts,jsx,tsx,mdx}",
     "./src/app/**/*.{js,ts,jsx,tsx,mdx}",
     "./node_modules/flowbite-react/**/*.js",
   ],
@@ -13,6 +15,9 @@ export default {
       colors: {
         sky: {
           200: "#bae6fd",
+        },
+        blue: {
+          500: "3b82f6",
         },
         // light mode
         tremor: {
