@@ -90,7 +90,7 @@ export const Content = () => {
               />
               <div className="flex justify-center items-start sm:mr-5 sm:ml-5 flex-col sm:w-1/2 sm:p-0 p-5 sm:h-screen">
                 <h1>Welcome,</h1>
-                <h2>I'm Jordan Yarros! </h2>
+                <h2>I&apos;m Jordan Yarros! </h2>
                 <h2>I am a Software Developer.</h2>
               </div>
               <div className="flex justify-center items-center">
