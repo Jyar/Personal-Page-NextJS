@@ -83,11 +83,11 @@ export const Content = () => {
         <div className=" w-full ">
           <div className="max-w-screen-xl m-auto">
             <div className="flex flex-col sm:flex-row sm:justify-evenly text-blue-500 p-20">
-              <Lottie
-                className="absolute top-0 z-50"
+              {/* <Lottie
+                className="absolute top-16"
                 animationData={confetti}
                 loop={false}
-              />
+              /> */}
               <div className="flex justify-center items-start sm:mr-5 sm:ml-5 flex-col sm:w-1/2 sm:p-0 p-5 sm:h-screen">
                 <h1>Welcome,</h1>
                 <h2>I&apos;m Jordan Yarros! </h2>
@@ -144,9 +144,7 @@ export const Content = () => {
               data-aos="fade-down-right"
               data-aos-anchor-placement="bottom-bottom"
             >
-              <h1 className="drop-shadow-lg bg-slate-50 rounded-lg p-4 pr-7 pl-7">
-                About
-              </h1>
+              <h1 className="area-title">About</h1>
               <Lottie
                 className="w-40 h-40 absolute left-64"
                 animationData={robotWelcomeAnimation}
@@ -206,9 +204,7 @@ export const Content = () => {
               data-aos="fade-down-right"
               data-aos-anchor-placement="bottom-bottom"
             >
-              <h1 className="drop-shadow-lg bg-slate-50 rounded-lg p-5">
-                Experience
-              </h1>
+              <h1 className="area-title">Experience</h1>
             </div>
             <div className="   rounded-md p-5 section-body w-full align-middle content-center justify-center flex-col  flex-wrap min-h-[50%] ">
               <div className="pb-2 justify-center flex">
@@ -266,9 +262,7 @@ export const Content = () => {
               data-aos="fade-down-right"
               data-aos-anchor-placement="bottom-bottom"
             >
-              <h1 className="drop-shadow-lg bg-slate-50 rounded-lg p-5">
-                Portfolio
-              </h1>
+              <h1 className="area-title">Portfolio</h1>
             </div>
             <div
               data-aos="fade-left"
@@ -299,9 +293,7 @@ export const Content = () => {
               data-aos="fade-down-right"
               data-aos-anchor-placement="bottom-bottom"
             >
-              <h1 className="drop-shadow-lg bg-slate-50 rounded-lg p-5 flex">
-                Education
-              </h1>
+              <h1 className="area-title">Education</h1>
             </div>
             <div className="section-body p-5 w-full align-middle content-center justify-center flex flex-wrap min-h-[50%]">
               <div
@@ -326,7 +318,6 @@ export const Content = () => {
             </div>
           </div>
           {/* ------------------- */}
-          Skills:
           {/* ------------------- */}
           <div className="cert-section"></div>
           <div className="flex flex-col p-8">
@@ -335,9 +326,7 @@ export const Content = () => {
               data-aos="fade-down-right"
               data-aos-anchor-placement="bottom-bottom"
             >
-              <h1 className="drop-shadow-lg bg-slate-50 rounded-lg p-5">
-                Certifications
-              </h1>
+              <h1 className="area-title">Certifications</h1>
             </div>
             <div
               data-aos="fade-left"
@@ -355,9 +344,7 @@ export const Content = () => {
               data-aos="fade-down-right"
               data-aos-anchor-placement="bottom-bottom"
             >
-              <h1 className="drop-shadow-lg bg-slate-50 rounded-lg p-5">
-                Hobbies
-              </h1>
+              <h1 className="area-title">Hobbies</h1>
             </div>
             <div className="section-body p-5 w-full align-middle content-center justify-center flex flex-wrap min-h-[50%] ">
               <div className="flex sm:flex-nowrap flex-wrap gap-2">
@@ -405,9 +392,7 @@ export const Content = () => {
               data-aos="fade-down-right"
               data-aos-anchor-placement="bottom-bottom"
             >
-              <h1 className="drop-shadow-lg bg-slate-50 rounded-lg p-5">
-                Blogs
-              </h1>
+              <h1 className="area-title">Blogs</h1>
             </div>
             <div
               data-aos="fade-left"

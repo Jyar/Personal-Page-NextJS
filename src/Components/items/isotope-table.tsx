@@ -13,22 +13,22 @@ const cardsLayout: GridLayout[] = [
     h: 7,
     filter: ["aws"],
   },
-  {
-    id: "d",
-    row: 0,
-    col: 1,
-    w: 5,
-    h: 7,
-    filter: ["coursera"],
-  },
-  {
-    id: "e",
-    row: 1,
-    col: 0,
-    w: 5,
-    h: 7,
-    filter: ["udemy"],
-  },
+  // {
+  //   id: "d",
+  //   row: 0,
+  //   col: 1,
+  //   w: 5,
+  //   h: 7,
+  //   filter: ["coursera"],
+  // },
+  // {
+  //   id: "e",
+  //   row: 1,
+  //   col: 0,
+  //   w: 5,
+  //   h: 7,
+  //   filter: ["udemy"],
+  // },
 ];
 
 interface FilterProps {
@@ -39,8 +39,8 @@ interface FilterProps {
 const filtersDefault: FilterProps[] = [
   { label: "all", isChecked: true },
   { label: "aws", isChecked: false },
-  { label: "udemy", isChecked: false },
-  { label: "coursera", isChecked: false },
+  // { label: "udemy", isChecked: false },
+  // { label: "coursera", isChecked: false },
 ];
 
 export default function IsotopeTable(): JSX.Element {

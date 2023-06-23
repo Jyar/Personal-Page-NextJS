@@ -22,7 +22,7 @@ export const MenuHeader = () => {
   }
 
   return (
-    <nav className="p-6 light:bg-white border-gray-200 dark:bg-gray-900">
+    <nav className="z-10 p-6 light:bg-white border-gray-200 dark:bg-gray-900">
       <div className="max-w-screen-xl flex flex-wrap items-center justify-between mx-auto">
         <span className="self-center flex text-4xl font-semibold whitespace-nowrap dark:text-white">
           <div className="flex text-center items-center">Jordan Yarros</div>
@@ -53,8 +53,8 @@ export const MenuHeader = () => {
           id="navbar-hamburger"
           className="hidden  w-full md:block md:w-auto border-b-4 border-slate-700"
         >
-          <ul className="font-medium flex flex-col p-4 md:p-0 mt-4 border border-gray-100 rounded-lg md:flex-row md:space-x-8 md:mt-0 md:border-0 dark:bg-gray-800 md:dark:bg-gray-900 dark:border-gray-700">
-            <li>
+          <ul className="z-50 font-medium flex flex-col p-4 md:p-0 mt-4 border border-gray-100 rounded-lg md:flex-row md:space-x-8 md:mt-0 md:border-0 dark:bg-gray-800 md:dark:bg-gray-900 dark:border-gray-700">
+            <li className="max-md:p-2 ">
               <Link
                 href="https://medium.com/@jy.codes1"
                 className="rounded p-0 text-3xl"
@@ -62,48 +62,54 @@ export const MenuHeader = () => {
                 replace={true}
                 legacyBehavior
               >
-                <a target="_externalIcon">
+                <a className="flex gap-2" target="_externalIcon">
                   {/* Home */}
                   <SiMedium />
+                  <div className="md:hidden text-lg"> Medium</div>
                 </a>
               </Link>
             </li>
-            <li>
+            <li className="max-md:p-2">
               <Link
                 href="https://twitter.com/jycodes"
                 className="rounded p-0 text-3xl "
                 legacyBehavior
               >
-                <a target="_externalIcon">
+                <a className="flex gap-2" target="_externalIcon">
                   {/* About */}
                   <FaTwitter />
+                  <div className="md:hidden text-lg"> Twitter</div>
                 </a>
               </Link>
             </li>
-            <li>
+            <li className="max-md:p-2">
               <Link
                 href="https://github.com/Jyar"
                 className="rounded p-0 text-3xl "
                 legacyBehavior
               >
-                <a target="_externalIcon">
+                <a className="flex gap-2" target="_externalIcon">
                   <FaGithub />
+                  <div className="md:hidden text-lg"> Github</div>
                 </a>
               </Link>
             </li>
-            <li>
-              <Link href="#" className="rounded p-0 text-3xl ">
+            <li className="max-md:p-2">
+              <Link href="#" className="rounded p-0 text-3xl flex gap-2">
                 <FaLinkedin />
+                <div className="md:hidden text-lg"> LinkedIn</div>
               </Link>
             </li>
-            <li>
+            <li className="max-md:p-2">
               <div className="rounded p-0 text-3xl ">
                 <a
                   href="/pdf/JordanYarrosResume2022.pdf"
                   target="_blank"
                   rel="noopener noreferrer"
+                  className="flex gap-2"
                 >
                   <IoDocumentText />
+                  <div className="md:hidden text-lg"> Resume</div>
                 </a>
               </div>
             </li>
