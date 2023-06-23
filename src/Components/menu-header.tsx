@@ -26,11 +26,6 @@ export const MenuHeader = () => {
       <div className="max-w-screen-xl flex flex-wrap items-center justify-between mx-auto">
         <span className="self-center flex text-4xl font-semibold whitespace-nowrap dark:text-white">
           <div className="flex text-center items-center">Jordan Yarros</div>
-          <Lottie
-            className="w-40 h-40"
-            animationData={robotWelcomeAnimation}
-            loop={false}
-          />
         </span>
         <button
           onClick={onHamburgerMenuPress}

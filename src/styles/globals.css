@@ -28,7 +28,7 @@ h2 {
 }
 
 body {
-  font-size: 1.5rem;
+  font-size: 1.3rem;
   font-family: Arial, Helvetica, sans-serif;
 }
 
@@ -48,11 +48,15 @@ textarea {
 }
 
 li {
-  font-size: 1.5rem;
+  font-size: 1.3rem;
+}
+
+.list-disc > li {
+  font-size: 1.1rem;
 }
 
 .text-body {
-  font-size: 1.5rem;
+  font-size: 1.3rem;
 }
 
 .certification-body {

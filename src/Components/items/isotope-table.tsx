@@ -29,14 +29,6 @@ const cardsLayout: GridLayout[] = [
     h: 7,
     filter: ["udemy"],
   },
-  {
-    id: "f ",
-    row: 1,
-    col: 1,
-    w: 5,
-    h: 7,
-    filter: ["Books and Youtubers"],
-  },
 ];
 
 interface FilterProps {
@@ -49,7 +41,6 @@ const filtersDefault: FilterProps[] = [
   { label: "aws", isChecked: false },
   { label: "udemy", isChecked: false },
   { label: "coursera", isChecked: false },
-  { label: "Books and Youtubers", isChecked: false },
 ];
 
 export default function IsotopeTable(): JSX.Element {
@@ -77,11 +68,17 @@ export default function IsotopeTable(): JSX.Element {
                 <a
                   href={`https://www.credly.com/badges/1e0b5338-ba14-43de-a791-bee2cb724047/linked_in?t=rtp0kl`}
                 >
-                  <Image src={cCp} alt="Picture ccp" width={200} height={200} />
                   {/* {card.id} */}
-                  {/* {card.filter.map((f, index) => (
-                      <React.Fragment key={index}>{f}</React.Fragment>
-                    ))} */}
+                  {card.filter.map((f, index) => (
+                    <React.Fragment key={index}>
+                      <Image
+                        src={f === "aws" ? cCp : ""}
+                        alt={`Picture of ${f}`}
+                        width={200}
+                        height={200}
+                      />
+                    </React.Fragment>
+                  ))}
                 </a>
               </div>
             </div>
