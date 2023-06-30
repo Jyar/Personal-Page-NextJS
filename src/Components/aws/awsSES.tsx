@@ -1,4 +1,5 @@
 import AWS from "aws-sdk";
+import { FormData } from "../types/FormData";
 
 const ses = new AWS.SES({ region: "us-east-1" });
 
@@ -9,24 +10,35 @@ ses.config.update({
   }),
 });
 
-const params = {
-  Destination: {
-    ToAddresses: ["y.jordan210@gmail.com"],
-  },
-  Message: {
-    Body: {
-      Text: {
-        Data: "This is the message body",
+function formatData(data: FormData) {
+  const formattedData = `
+  name: ${data.first + " " + data.last} \n
+  email: ${data.email} \n
+  phone: ${data.phone} \n
+  company: ${data.company} \n
+  comment: ${data.comment} 
+  `;
+  const params = {
+    Destination: {
+      ToAddresses: ["y.jordan210@gmail.com"],
+    },
+    Message: {
+      Body: {
+        Text: {
+          Data: formattedData,
+        },
+      },
+      Subject: {
+        Data: "Thanks for submitting info to Jordan Y",
       },
     },
-    Subject: {
-      Data: "This is the message subject",
-    },
-  },
-  Source: "y.jordan210@gmail.com",
-};
+    Source: "y.jordan210@gmail.com",
+  };
+  return params;
+}
 
-export const AWSSES = () => {
+export const AWSSES = (data: FormData) => {
+  const params = formatData(data);
   ses.sendEmail(params, function (data, err: AWS.SES.SendEmailResponse) {
     if (err) {
       console.log(err, err.MessageId);
@@ -34,5 +46,5 @@ export const AWSSES = () => {
       console.log(data);
     }
   });
-  return <div>success</div>;
+  return;
 };

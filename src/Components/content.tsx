@@ -152,13 +152,15 @@ export const Content = () => {
               />
             </div>
             <div className=" section-body rounded-md p-5 w-full align-middle content-center justify-center flex flex-col sm:flex-row min-h-[50%] ">
-              <Image
-                className="drop-shadow-lg rounded-lg justify-center p-2"
-                src={pittsburgh}
-                alt="Picture of Jordan"
-                width={350}
-                height={250}
-              />
+              <div className="flex items-center">
+                <Image
+                  className="drop-shadow-lg rounded-lg  justify-center p-2"
+                  src={pittsburgh}
+                  alt="Picture of Jordan"
+                  width={350}
+                  height={250}
+                />
+              </div>
               <div className="flex flex-col justify-evenly w-full m-5 text-md">
                 <div className="text-body p-5">
                   Hello, My name is Jordan Yarros. I am currently a Sofware
@@ -248,9 +250,14 @@ export const Content = () => {
                   reliability ● Worked with metadata driven form templates
                 </li>
               </ul>
-              <div className="p-2 pt-5 justify-center flex">
-                <SiFreelancer className="text-8xl"></SiFreelancer>
-                <div className="flex items-center">Freelance</div>
+              <div className="flex-col">
+                <div className="p-2 pt-5 justify-center flex">
+                  <SiFreelancer className="text-8xl"></SiFreelancer>
+                  <div className="flex items-center">Freelance</div>
+                </div>
+                <div className="text-sm flex justify-center">
+                  Coming Soon...
+                </div>
               </div>
             </div>
           </div>

@@ -2,6 +2,7 @@ import React, { ChangeEvent, useState } from "react";
 import IsoTopeGrid, { GridLayout } from "react-isotope";
 import Filter from "react-isotope";
 import cCp from "../../../public/images/cCP.png";
+import udemyReact from "../../../public/images/udemyReact.png";
 import Image from "next/image";
 
 const cardsLayout: GridLayout[] = [
@@ -13,21 +14,21 @@ const cardsLayout: GridLayout[] = [
     h: 7,
     filter: ["aws"],
   },
-  // {
-  //   id: "d",
-  //   row: 0,
-  //   col: 1,
-  //   w: 5,
-  //   h: 7,
-  //   filter: ["coursera"],
-  // },
+  {
+    id: "d",
+    row: 0,
+    col: 1,
+    w: 5,
+    h: 7,
+    filter: ["udemy"],
+  },
   // {
   //   id: "e",
   //   row: 1,
   //   col: 0,
   //   w: 5,
   //   h: 7,
-  //   filter: ["udemy"],
+  //   filter: ["coursera"],
   // },
 ];
 
@@ -39,12 +40,33 @@ interface FilterProps {
 const filtersDefault: FilterProps[] = [
   { label: "all", isChecked: true },
   { label: "aws", isChecked: false },
-  // { label: "udemy", isChecked: false },
+  { label: "udemy", isChecked: false },
   // { label: "coursera", isChecked: false },
 ];
 
 export default function IsotopeTable(): JSX.Element {
   const [filters, updateFilters] = useState<FilterProps[]>(filtersDefault);
+
+  function checkImage(f: string) {
+    switch (f) {
+      case "aws":
+        return cCp;
+      case "udemy":
+        return udemyReact;
+      default:
+        return "";
+    }
+  }
+  function checkUrl(f: string) {
+    switch (f) {
+      case "aws":
+        return "https://www.credly.com/badges/1e0b5338-ba14-43de-a791-bee2cb724047/linked_in?t=rtp0kl";
+      case "udemy":
+        return "https://www.udemy.com/certificate/UC-19af54ea-4faa-4c0c-821b-0592c4d9c8e3/";
+      default:
+        return "";
+    }
+  }
 
   return (
     <div className="App">
@@ -65,21 +87,19 @@ export default function IsotopeTable(): JSX.Element {
               className={`${card.filter[0]} gallery-border`}
             >
               <div className="gallery-item">
-                <a
-                  href={`https://www.credly.com/badges/1e0b5338-ba14-43de-a791-bee2cb724047/linked_in?t=rtp0kl`}
-                >
-                  {/* {card.id} */}
-                  {card.filter.map((f, index) => (
+                {/* {card.id} */}
+                {card.filter.map((f, index) => (
+                  <a href={checkUrl(f)}>
                     <React.Fragment key={index}>
                       <Image
-                        src={f === "aws" ? cCp : ""}
+                        src={checkImage(f)}
                         alt={`Picture of ${f}`}
                         width={200}
                         height={200}
                       />
                     </React.Fragment>
-                  ))}
-                </a>
+                  </a>
+                ))}
               </div>
             </div>
           ))}

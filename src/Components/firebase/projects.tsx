@@ -1,14 +1,14 @@
-// import { ref, set } from "firebase/database";
-// import { db } from "../../../utils/firebase";
+import { ref, set } from "firebase/database";
+import { db } from "../../../utils/firebase";
+import { FormData } from "../types/FormData";
 
-// function writeUserData(userId: string, name: any, email: any) {
-//   set(ref(db, "users/" + userId), {
-//     username: name,
-//     email: email,
-//   });
-// }
+function writeUserData(data: FormData) {
+  if (db) {
+    set(ref(db, "users/" + (data.first + data.last).toLowerCase()), data);
+  }
+}
 
-// export const Projects = () => {
-//   writeUserData("test", "name", "email");
-//   return <div>success</div>;
-// };
+export const Projects = (data: FormData) => {
+  console.log(data);
+  writeUserData(data);
+};
