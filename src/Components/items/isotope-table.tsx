@@ -89,8 +89,8 @@ export default function IsotopeTable(): JSX.Element {
               <div className="gallery-item">
                 {/* {card.id} */}
                 {card.filter.map((f, index) => (
-                  <a href={checkUrl(f)}>
-                    <React.Fragment key={index}>
+                  <a key={index} href={checkUrl(f)}>
+                    <React.Fragment>
                       <Image
                         src={checkImage(f)}
                         alt={`Picture of ${f}`}
