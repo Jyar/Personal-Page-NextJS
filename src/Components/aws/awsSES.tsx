@@ -5,8 +5,8 @@ const ses = new AWS.SES({ region: "us-east-1" });
 
 ses.config.update({
   credentials: new AWS.Credentials({
-    accessKeyId: process.env.AWS_ACCESS_ID || "",
-    secretAccessKey: process.env.AWS_ACCESS_KEY || "",
+    accessKeyId: process.env.AWS_ACCESS_ID_NEXT || "",
+    secretAccessKey: process.env.AWS_ACCESS_KEY_NEXT || "",
   }),
 });
 
