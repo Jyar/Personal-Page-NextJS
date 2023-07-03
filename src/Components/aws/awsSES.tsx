@@ -39,12 +39,13 @@ function formatData(data: FormData) {
 
 export const AWSSES = (data: FormData) => {
   const params = formatData(data);
-  ses.sendEmail(params, function (data, err: AWS.SES.SendEmailResponse) {
-    if (err) {
-      console.log(err, err.MessageId);
-    } else {
-      console.log(data);
-    }
-  });
+  console.log("SES sent");
+  // ses.sendEmail(params, function (data, err: AWS.SES.SendEmailResponse) {
+  //   if (err) {
+  //     console.log(err, err.MessageId);
+  //   } else {
+  //     console.log(data);
+  //   }
+  // });
   return;
 };
