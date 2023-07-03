@@ -19,8 +19,6 @@ export default function Home() {
         <MenuHeader />
       </header>
       <main>
-        {/* <AWSSES />
-        <Projects /> */}
         <Content />
       </main>
       <footer>
