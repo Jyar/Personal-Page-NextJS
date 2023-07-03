@@ -1,6 +1,4 @@
 import { useState } from "react";
-import { Projects } from "@/Components/firebase/projects";
-import { AWSSES } from "@/Components/aws/awsSES";
 import { FormData } from "../types/FormData";
 
 export const ContactForm = () => {
@@ -28,8 +26,17 @@ export const ContactForm = () => {
       date: String(new Date()),
     };
 
-    Projects(data);
-    AWSSES(data);
+    try {
+      const res = await fetch("/api/contact", {
+        method: "post",
+        body: JSON.stringify(data),
+        headers: {
+          "Content-Type": "applicaiton/json",
+        },
+      });
+    } catch (err) {
+      console.log(err);
+    }
   };
 
   return (
