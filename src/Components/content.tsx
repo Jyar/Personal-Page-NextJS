@@ -276,7 +276,7 @@ export const Content = () => {
               data-aos-anchor-placement="bottom-bottom"
               className="section-body p-5 w-full align-middle content-center justify-center flex flex-wrap min-h-[50%]"
             >
-              <div className="flex gap-6">
+              <div className="flex gap-6 sm:flex-nowrap flex-wrap">
                 <Card
                   title="React Native Application"
                   content="Check out my react native app on the app store. It's called ..."
@@ -304,11 +304,11 @@ export const Content = () => {
             </div>
             <div className="section-body p-5 w-full align-middle content-center justify-center flex flex-wrap min-h-[50%]">
               <div
-                className=" rounded-md p-5 flex justify-evenly"
+                className=" rounded-md p-5 flex md:flex-nowrap flex-wrap justify-evenly"
                 data-aos="fade-down-right"
                 data-aos-anchor-placement="bottom-bottom"
               >
-                <div className=" w-1/3 flex flex-col items-center gap-y-5">
+                <div className=" md:w-1/3 w-full flex flex-col items-center gap-y-5 p-5">
                   <MdSchool className="text-8xl" />
                   Christopher Newport University. Presidential Leadership
                   program - GPA 3.4 - Major In Computer Science and Minor in
