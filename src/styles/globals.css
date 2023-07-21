@@ -1,11 +1,16 @@
 @import "tailwindcss/base";
 @import "tailwindcss/components";
 @import "tailwindcss/utilities";
+@import "@fontsource/nunito";
+@import "@fontsource/nunito/400.css";
+@import "@fontsource/nunito/400-italic.css";
 
 html,
 body {
   overflow-x: hidden;
   color-scheme: light !important;
+  font-family: "Nunito", Arial, Helvetica, sans-serif;
+  font-size: 1.3rem;
 }
 
 h1 {
@@ -29,11 +34,6 @@ h2 {
 .ball {
   fill: blue;
   visibility: hidden;
-}
-
-body {
-  font-size: 1.3rem;
-  font-family: Arial, Helvetica, sans-serif;
 }
 
 input {

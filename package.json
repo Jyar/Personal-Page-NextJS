@@ -9,6 +9,7 @@
     "lint": "next lint"
   },
   "dependencies": {
+    "@fontsource/nunito": "^5.0.5",
     "@types/aos": "^3.0.4",
     "@types/isotope-layout": "^3.0.9",
     "@types/node": "18.16.2",

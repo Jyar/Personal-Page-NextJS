@@ -296,14 +296,14 @@ export const Content = () => {
                 data-aos="fade-down-right"
                 data-aos-anchor-placement="bottom-bottom"
               >
-                <div className=" md:w-1/3 w-full flex flex-col items-center gap-y-5 p-5">
+                <div className=" md:w-1/2 w-full flex flex-col items-center gap-y-5 p-5">
                   <MdSchool className="text-8xl" />
                   Christopher Newport University. Presidential Leadership
                   program - GPA 3.4 - Major In Computer Science and Minor in
                   leadership.
                 </div>
                 <Image
-                  className="drop-shadow-lg rounded-lg"
+                  className="drop-shadow-lg rounded-lg sm:h-fit sm:mb-auto sm:mt-auto"
                   src={cnuCampus}
                   alt="Picture of CNU"
                   width={300}
