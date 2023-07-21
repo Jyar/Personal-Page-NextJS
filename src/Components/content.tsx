@@ -164,8 +164,8 @@ export const Content = () => {
               <div className="flex flex-col justify-evenly w-full m-5 text-md">
                 <div className="text-body p-5">
                   Hello, My name is Jordan Yarros. I am currently a Sofware
-                  Developer for ADP, where I do mostly frontend work with
-                  Angular and Drupal. I went to Christopher Newport University
+                  Developer for ADP, where I work with Angular, Drupal, Docker,
+                  Kubernetes, and SQL. I went to Christopher Newport University
                   for my Bachelors, where I majored in Computer Science and a
                   minored in leadership. There I learned fundamental computer
                   science concepts, data structures, and algorithms. I also
@@ -175,24 +175,12 @@ export const Content = () => {
                 <div className="flex sm:flex-row gap-y-5 flex-col justify-around">
                   <ul className="aboutMe flex flex-col gap-y-5 ">
                     <li className="flex">
-                      <GiRocket className="mr-2" /> Birthday: 02/07/1997
-                    </li>
-                    <li className="flex">
-                      <GiRocket className="mr-2" /> Age: 26
-                    </li>
-                    <li className="flex">
-                      <GiRocket className="mr-2" /> Location: Virginia Beach, VA
+                      <GiRocket className="mr-2" /> Phone: 540-449-9992
                     </li>
                   </ul>
                   <ul className="aboutMe  flex flex-col gap-y-5">
                     <li className="flex">
-                      <GiRocket className="mr-2" /> Phone: 540-449-9992
-                    </li>
-                    <li className="flex">
                       <GiRocket className="mr-2" /> Email: jyar27@gmail.com
-                    </li>
-                    <li className="flex">
-                      <GiRocket className="mr-2" /> Degree: Bachelors
                     </li>
                   </ul>
                 </div>
@@ -374,7 +362,7 @@ export const Content = () => {
                   <GiSpartanHelmet className="text-8xl mr-auto ml-auto pt-5" />
                   <div className="p-5">
                     Working out and doing spartan races! Ive done the trifecta:
-                    beast, spartan, ultra. However, not in the same year.
+                    sprint, super, beast. However, not in the same year.
                   </div>
                 </div>
                 <div
