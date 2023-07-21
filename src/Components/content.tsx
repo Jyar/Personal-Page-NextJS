@@ -162,7 +162,7 @@ export const Content = () => {
                 />
               </div>
               <div className="flex flex-col justify-evenly w-full m-5 text-md">
-                <div className="text-body p-5">
+                <div className="text-body p-5 nunito">
                   Hello, My name is Jordan Yarros. I am currently a Sofware
                   Developer for ADP, where I work with Angular, Drupal, Docker,
                   Kubernetes, and SQL. I went to Christopher Newport University
@@ -174,12 +174,12 @@ export const Content = () => {
                 </div>
                 <div className="flex sm:flex-row gap-y-5 flex-col justify-around">
                   <ul className="aboutMe flex flex-col gap-y-5 ">
-                    <li className="flex">
+                    <li className="flex nunito">
                       <GiRocket className="mr-2" /> Phone: 540-449-9992
                     </li>
                   </ul>
                   <ul className="aboutMe  flex flex-col gap-y-5">
-                    <li className="flex">
+                    <li className="flex nunito">
                       <GiRocket className="mr-2" /> Email: jyar27@gmail.com
                     </li>
                   </ul>
@@ -200,7 +200,7 @@ export const Content = () => {
               <div className="pb-2 justify-center flex">
                 <SiAdp className="text-8xl" />
               </div>
-              <ul className="list-disc">
+              <ul className="list-disc nunito">
                 <b> Drupal Application Development: </b>
                 <li>
                   Worked with JQuery and AJAX to implement a chatbot so 50,000
@@ -219,7 +219,7 @@ export const Content = () => {
                   and deploy code
                 </li>
               </ul>
-              <ul className="list-disc pt-5">
+              <ul className="list-disc pt-5 nunito">
                 <b>Angular Project: </b>
                 <li>
                   Implemented Services and APIs to gather and present employee
@@ -264,7 +264,7 @@ export const Content = () => {
               data-aos-anchor-placement="bottom-bottom"
               className="section-body p-5 w-full align-middle content-center justify-center flex flex-wrap min-h-[50%]"
             >
-              <div className="flex gap-6 sm:flex-nowrap flex-wrap">
+              <div className="flex gap-6 sm:flex-nowrap flex-wrap nunito">
                 <Card
                   title="React Native Application"
                   content="Check out my react native app on the app store. It's called ..."
@@ -296,7 +296,7 @@ export const Content = () => {
                 data-aos="fade-down-right"
                 data-aos-anchor-placement="bottom-bottom"
               >
-                <div className=" md:w-1/2 w-full flex flex-col items-center gap-y-5 p-5">
+                <div className=" md:w-1/2 w-full flex flex-col items-center gap-y-5 p-5 nunito">
                   <MdSchool className="text-8xl" />
                   Christopher Newport University. Presidential Leadership
                   program - GPA 3.4 - Major In Computer Science and Minor in
@@ -344,12 +344,12 @@ export const Content = () => {
             <div className="section-body p-5 w-full align-middle content-center justify-center flex flex-wrap min-h-[50%] ">
               <div className="flex sm:flex-nowrap flex-wrap gap-2">
                 <div
-                  className="flex flex-col w-full bg-green-300 rounded-md "
+                  className="flex flex-col w-full bg-green-300 rounded-md"
                   data-aos="zoom-in-down"
                   data-aos-anchor-placement="bottom-bottom"
                 >
                   <GiSoccerKick className="text-8xl mr-auto ml-auto pt-5" />
-                  <div className="p-5">
+                  <div className="p-5 nunito">
                     I love soccer. I was a collegiate d3 soccer player! My
                     favorite soccer team is liverpool. YNWA!
                   </div>
@@ -360,7 +360,7 @@ export const Content = () => {
                   data-aos-anchor-placement="bottom-bottom"
                 >
                   <GiSpartanHelmet className="text-8xl mr-auto ml-auto pt-5" />
-                  <div className="p-5">
+                  <div className="p-5 nunito">
                     Working out and doing spartan races! Ive done the trifecta:
                     sprint, super, beast. However, not in the same year.
                   </div>
@@ -371,7 +371,7 @@ export const Content = () => {
                   data-aos-anchor-placement="bottom-bottom"
                 >
                   <FaRaspberryPi className="text-8xl  mr-auto ml-auto pt-5" />
-                  <div className="p-5">
+                  <div className="p-5 nunito">
                     I like to expiriment with technology. I have made my own
                     retro gaming pi and I have also built my own computer.
                   </div>
