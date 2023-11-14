@@ -1,6 +1,7 @@
 type CardProps = {
   title: string;
   content: string;
+  url?: string;
 };
 export const Card = (children: CardProps) => {
   return (

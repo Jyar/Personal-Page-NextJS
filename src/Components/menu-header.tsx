@@ -95,10 +95,14 @@ export const MenuHeader = () => {
               </Link>
             </li>
             <li className="max-md:p-2">
-              <Link href="#" className="rounded p-0 text-3xl flex gap-2">
+              <a
+                target="_blank"
+                href="https://www.linkedin.com/in/jordan-yarros/"
+                className="rounded p-0 text-3xl flex gap-2"
+              >
                 <FaLinkedin />
                 <div className="md:hidden text-lg"> LinkedIn</div>
-              </Link>
+              </a>
             </li>
             <li className="max-md:p-2">
               <div className="rounded p-0 text-3xl ">

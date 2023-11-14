@@ -266,16 +266,16 @@ export const Content = () => {
             >
               <div className="flex gap-6 sm:flex-nowrap flex-wrap nunito">
                 <Card
-                  title="React Native Application"
-                  content="Check out my react native app on the app store. It's called ..."
+                  title="Angular API Dashboard"
+                  content="Check out my Angular application. It demonstrates various API's"
                 />
                 <Card
-                  title="Netflix Clone"
-                  content="Created with React. Looks like netlfix. I am even pulling in information with a movie api"
+                  title="Nextjs Websocket Applications"
+                  content="Application utilizing socket.io for a chat feature and a tic tac toe game."
                 />
                 <Card
-                  title="AWS Load Balancing with Kubernetes "
-                  content="Check out this application here"
+                  title="Astro SSG site"
+                  content="Check out this static site application. Display numerous websites that I have found useful."
                 />
               </div>
             </div>
@@ -381,21 +381,6 @@ export const Content = () => {
           </div>
           {/* ------------------- */}
           {/* ------------------- */}
-          <div className="flex flex-col p-8">
-            <div
-              className="section  flex items-center"
-              data-aos="fade-down-right"
-              data-aos-anchor-placement="bottom-bottom"
-            >
-              <h1 className="area-title">Blogs</h1>
-            </div>
-            <div
-              data-aos="fade-left"
-              className="section-body p-5 w-full align-middle content-center justify-center flex flex-wrap min-h-[50%] "
-            >
-              <span className="">medium posts</span>
-            </div>
-          </div>
         </div>
         <div className=" w-full mt-4 p-8">
           <div className="flex">Please fill out the form to contact me...</div>
