@@ -82,7 +82,7 @@ export default function IsotopeTable(): JSX.Element {
         >
           {cardsLayout.map((card: GridLayout) => (
             <div
-              data-aos="zoom-in-up"
+              // data-aos="zoom-in-up"
               key={card.id}
               className={`${card.filter[0]} gallery-border`}
             >

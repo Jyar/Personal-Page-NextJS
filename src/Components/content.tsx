@@ -141,8 +141,8 @@ export const Content = () => {
           <div className="flex flex-col p-8">
             <div
               className="section flex items-center"
-              data-aos="fade-down-right"
-              data-aos-anchor-placement="bottom-bottom"
+              // data-aos="fade-down-right"
+              // data-aos-anchor-placement="bottom-bottom"
             >
               <h1 className="area-title">About</h1>
               <Lottie
@@ -191,8 +191,8 @@ export const Content = () => {
           <div className="flex  flex-col p-8 bg-slate-100">
             <div
               className="section  flex items-center"
-              data-aos="fade-down-right"
-              data-aos-anchor-placement="bottom-bottom"
+              // data-aos="fade-down-right"
+              // data-aos-anchor-placement="bottom-bottom"
             >
               <h1 className="area-title">Experience</h1>
             </div>
@@ -254,14 +254,14 @@ export const Content = () => {
           <div className="flex flex-col p-8">
             <div
               className="section  flex items-center"
-              data-aos="fade-down-right"
-              data-aos-anchor-placement="bottom-bottom"
+              // data-aos="fade-down-right"
+              // data-aos-anchor-placement="bottom-bottom"
             >
               <h1 className="area-title">Portfolio</h1>
             </div>
             <div
-              data-aos="fade-left"
-              data-aos-anchor-placement="bottom-bottom"
+              // data-aos="fade-left"
+              // data-aos-anchor-placement="bottom-bottom"
               className="section-body p-5 w-full align-middle content-center justify-center flex flex-wrap min-h-[50%]"
             >
               <div className="flex gap-6 sm:flex-nowrap flex-wrap nunito">
@@ -285,16 +285,16 @@ export const Content = () => {
           <div className="flex  flex-col p-8 bg-slate-100">
             <div
               className="section  flex items-center"
-              data-aos="fade-down-right"
-              data-aos-anchor-placement="bottom-bottom"
+              // data-aos="fade-down-right"
+              // data-aos-anchor-placement="bottom-bottom"
             >
               <h1 className="area-title">Education</h1>
             </div>
             <div className="section-body p-5 w-full align-middle content-center justify-center flex flex-wrap min-h-[50%]">
               <div
                 className=" rounded-md p-5 flex md:flex-nowrap flex-wrap justify-evenly"
-                data-aos="fade-down-right"
-                data-aos-anchor-placement="bottom-bottom"
+                // data-aos="fade-down-right"
+                // data-aos-anchor-placement="bottom-bottom"
               >
                 <div className=" md:w-1/2 w-full flex flex-col items-center gap-y-5 p-5 nunito">
                   <MdSchool className="text-8xl" />
@@ -318,14 +318,14 @@ export const Content = () => {
           <div className="flex flex-col p-8">
             <div
               className="section  flex items-center"
-              data-aos="fade-down-right"
-              data-aos-anchor-placement="bottom-bottom"
+              // data-aos="fade-down-right"
+              // data-aos-anchor-placement="bottom-bottom"
             >
               <h1 className="area-title">Certifications</h1>
             </div>
             <div
-              data-aos="fade-left"
-              data-aos-anchor-placement="bottom-bottom"
+              // data-aos="fade-left"
+              // data-aos-anchor-placement="bottom-bottom"
               className="section-body p-5 pt-10 certification-body w-full align-middle content-center justify-start flex flex-wrap min-h-[50%] "
             >
               <IsotopeTable />
@@ -336,8 +336,8 @@ export const Content = () => {
           <div className="flex  flex-col p-8 bg-slate-100">
             <div
               className="section  flex items-center"
-              data-aos="fade-down-right"
-              data-aos-anchor-placement="bottom-bottom"
+              // data-aos="fade-down-right"
+              // data-aos-anchor-placement="bottom-bottom"
             >
               <h1 className="area-title">Hobbies</h1>
             </div>
@@ -345,8 +345,8 @@ export const Content = () => {
               <div className="flex sm:flex-nowrap flex-wrap gap-2">
                 <div
                   className="flex flex-col w-full bg-green-300 rounded-md"
-                  data-aos="zoom-in-down"
-                  data-aos-anchor-placement="bottom-bottom"
+                  // data-aos="zoom-in-down"
+                  // data-aos-anchor-placement="bottom-bottom"
                 >
                   <GiSoccerKick className="text-8xl mr-auto ml-auto pt-5" />
                   <div className="p-5 nunito">
@@ -356,8 +356,8 @@ export const Content = () => {
                 </div>
                 <div
                   className="flex flex-col w-full bg-green-300 rounded-md "
-                  data-aos="flip-up"
-                  data-aos-anchor-placement="bottom-bottom"
+                  // data-aos="flip-up"
+                  // data-aos-anchor-placement="bottom-bottom"
                 >
                   <GiSpartanHelmet className="text-8xl mr-auto ml-auto pt-5" />
                   <div className="p-5 nunito">
@@ -367,8 +367,8 @@ export const Content = () => {
                 </div>
                 <div
                   className="flex flex-col w-full bg-green-300 rounded-md"
-                  data-aos="fade-left"
-                  data-aos-anchor-placement="bottom-bottom"
+                  // data-aos="fade-left"
+                  // data-aos-anchor-placement="bottom-bottom"
                 >
                   <FaRaspberryPi className="text-8xl  mr-auto ml-auto pt-5" />
                   <div className="p-5 nunito">
