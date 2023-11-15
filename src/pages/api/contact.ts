@@ -1,7 +1,7 @@
 // Next.js API route support: https://nextjs.org/docs/api-routes/introduction
 import type { NextApiRequest, NextApiResponse } from "next";
-import { ref, set } from "firebase/database";
-import { db } from "../../../utils/firebase";
+// import { ref, set } from "firebase/database";
+// import { db } from "../../../utils/firebase";
 import { FormData } from "../../Components/types/FormData";
 import { AWSSES } from "@/Components/aws/awsSES";
 
@@ -16,9 +16,6 @@ export default function handler(
   function writeUserData(data: FormData) {
     if (req.method !== "POST") {
       res.status(405).send("incorrect request");
-    }
-    if (db) {
-      set(ref(db, "users/" + (data.first + data.last).toLowerCase()), data);
     }
   }
 

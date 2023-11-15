@@ -27,15 +27,16 @@ export const ContactForm = () => {
     };
 
     try {
-      const res = await fetch("/api/contact", {
+      // /api/contact for nextjs Endpoint
+      const res = await fetch("http://localhost:3001/api/contact", {
         method: "post",
         body: JSON.stringify(data),
         headers: {
-          "Content-Type": "applicaiton/json",
+          "Content-Type": "application/json",
         },
       });
     } catch (err) {
-      console.log(err);
+      console.log("ERROR" + err);
     }
   };
 
