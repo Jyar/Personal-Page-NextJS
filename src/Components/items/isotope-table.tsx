@@ -92,6 +92,7 @@ export default function IsotopeTable(): JSX.Element {
                   <a key={index} href={checkUrl(f)}>
                     <React.Fragment>
                       <Image
+                        className="h-auto w-auto"
                         src={checkImage(f)}
                         alt={`Picture of ${f}`}
                         width={200}

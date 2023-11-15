@@ -33,7 +33,13 @@ export const Footer = () => {
               </a>
             </li>
           </ul> */}
-          <Image src={jyLogo} width={50} height={50} alt="Jy Logo" />
+          <Image
+            className="h-auto w-auto"
+            src={jyLogo}
+            width={50}
+            height={50}
+            alt="Jy Logo"
+          />
           <div className="p-5"></div>
           <span className="self-center text-2xl font-semibold whitespace-nowrap dark:text-white">
             Jordan Yarros

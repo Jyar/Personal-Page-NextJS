@@ -95,11 +95,12 @@ export const Content = () => {
               </div>
               <div className="flex justify-center items-center">
                 <Image
-                  className="drop-shadow-lg rounded-lg justify-center"
+                  className="drop-shadow-lg rounded-lg justify-center w-auto h-auto"
                   src={yosemite}
                   alt="Picture of Jordan and yosemite"
                   width={800}
                   height={800}
+                  priority
                 />
               </div>
             </div>
@@ -303,7 +304,7 @@ export const Content = () => {
                   leadership.
                 </div>
                 <Image
-                  className="drop-shadow-lg rounded-lg sm:h-fit sm:mb-auto sm:mt-auto"
+                  className="drop-shadow-lg rounded-lg sm:h-fit sm:mb-auto sm:mt-auto h-auto w-auto"
                   src={cnuCampus}
                   alt="Picture of CNU"
                   width={300}
